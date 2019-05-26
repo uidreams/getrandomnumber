@@ -21,6 +21,15 @@
     body {
       background-color: burlywood;
     }
+    .centered {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
+    }
   </style>
   <script>
     function getRandomIntInclusive(min, max) {
@@ -42,7 +51,7 @@
 
 <body>
   <header id="header">
-    <div class="container">
+    <div class="container centered">
       <div id="logo" class="pull-left">
         <!-- <a href="#hero"><img src="img/logo.png" alt="" title="" /></img></a>
         Uncomment below if you prefer to use a text logo -->
